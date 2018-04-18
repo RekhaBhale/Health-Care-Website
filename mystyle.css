@@ -1,0 +1,134 @@
+*{
+	margin:0%;
+	padding:0%;	
+}
+.container
+{
+ 	width:100%;	
+}
+#div1
+{
+	background-color:white;	
+}
+.wrapper
+{
+	width:950px;
+	margin:auto;
+}
+ul.a
+{
+	background-color:blue;
+}
+ul.a li
+{
+	display:inline-block;	
+	height:40px;
+	padding:0%;
+	color:white;
+	background-color:blue;
+	width:220px;
+	text-align:center;
+	line-height:40px;
+}
+ul.a li a
+{
+	text-decoration:none;
+	color:white;
+	display:block;
+}
+#block2
+{
+	height:180px;
+}
+#logo_left img
+{
+	margin-top:30px;
+	width:320px;
+	height:120px;
+}
+
+#logo_right
+{
+	margin-top:60px;
+	float:right;
+}
+#textid
+{
+	width:470px;
+	height:40px;
+	border-radius:8px;
+}
+#butid
+{
+	width:90px;
+	height:40px;
+	border-radius:8px;
+	font-size:15px;
+	background-color:black;
+	color:white;
+	padding:5px;
+	border:1px solid black;
+}
+#div3
+{
+	color:white;
+}
+ul.b
+{
+    	position:absolute;
+    	left:200px;
+}
+#a1
+{
+    left:260px;
+    position:absolute;
+    width:240px;
+}
+#a2
+{
+    width:140px;    
+}
+#a4
+{
+    width:100px;
+}
+#a3
+{
+    width:150px;
+}
+ul.b li
+{	
+    top:60px;display:inline-block;height:40px;padding:0%;color:#000080;text-align:center;line-height:40px;font-size:20px;
+}
+ul.b li a
+{
+	text-decoration:none;
+	color:#000080;
+	display:block;
+}
+ul.b li a:hover
+{
+	text-decoration:none;
+	border-radius:10px;
+	color:white;
+	background-color:#0020C2;
+}
+clear
+{
+	clear:both;
+}
+table
+{
+	width:950px;
+	height:100px;
+}
+td
+{
+	height:400px;
+}
+td img
+{
+
+	width:200px;
+	height:200px;
+}

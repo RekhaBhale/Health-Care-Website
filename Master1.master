@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master1.master.cs" Inherits="Master1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="s1.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body >
+    <form id="form1" runat="server">
+     
+       <table style="top:20px; left:200px; position:absolute;">
+        <tr class="row1">
+            <td><img src="Images/Slide1.JPG" alt="LOGO" style="height:140px; width:300px; top:8px; left:100px"/></td> 
+            <td style="width:420px"></td>
+            <td>
+             <ul class="b"> <li><a href="Emergency_no.aspx" style="left:755px; top:40px; position:absolute; width:250px;font-size:20px;"><b>Emergency Contacts</b></a></li></ul>
+            </td>
+        </tr>
+        </table>
+        <table style="top:140px; position:absolute; left:430px">
+        <tr class="row2">
+            <ul class="b">
+			    <li><a href="Pat_responsibility.aspx" style="left:450px; top:140px; position:absolute; width:250px;font-size:20px;"><b>Patient Care & Services</b></a></li>
+			    <li><a href="Specialist.aspx" style="left:700px; top:140px; position:absolute; width:120px;font-size:20px;"><b>Specialities</b></a></li>
+			    <li><a href="About_us.aspx" style=" left:820px; top:140px; position:absolute; width:120px;font-size:20px;"><b>About Us</b></a></li>
+			    <li><a href="Contact_us.aspx" style="left:940px; top:140px; position:absolute; width:120px;font-size:20px;"><b>Contact Us</b></a></li>
+                <li><a href="log.aspx" style="left:1060px; top:140px; position:absolute; width:160px;font-size:20px;"><b>Login Here</b></a>
+                    <img src="Images/untitled.png" style=" width:20px; height:20px; position:absolute; left:1195px; top:152px" />
+                </li>
+		    </ul>
+        </tr>
+              </table>
+        <div style="width:100%; height:7px; background-color:#2B65EC; position:absolute; top:180px"></div>
+        <div>
+             <ul class="b">
+			    <li><a href="Book_appoint.aspx" style="left:400px; top:200px; position:absolute; width:250px;font-size:20px"><b>Book an Appointment</b></a></li>
+			    <li><a href="Cancel_appoint.aspx" style="left:700px; top:200px; position:absolute; width:300px;font-size:20px"><b>Cancel Appointment</b></a></li>  
+	          </ul>
+        </div>
+           
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+<div style="width:100%; height:7px; background-color:#2B65EC; position:absolute; top:970px"></div>
+<div style=" position:absolute; top:800px; height:420px" >
+     <table class="foot" style=" position:absolute; top:40px; height:420px">
+      
+        <tr style="top:100px; position:absolute">
+           <td style="position:absolute; width:50%; left:150px; top:40px">
+            <b><p style=" width:300px; position:absolute">
+                Health Care System       
+                Gurudatta Sahawas, E Wing, Shop No. 34, 470/498,
+                Shaniwar Peth Near Dakhshinmukhi Maruti Mandir,
+                Mumbai-400030, Maharashtra, India.
+            </p></b>
+           <b> <p style=" width:400px; position:absolute; top:100px">
+                Email:srr@gmail.com<br />
+                Call Us: 9876543210<br />
+                Fax: 123456789<br />
+            </p></b>
+           </td>
+           <td style="position:absolute; width:400px; left:850px; top:60px">
+                <a href="About_us.aspx"  style=" text-decoration:none">ABOUT US</a><br /><br /><br />
+                <a href="About_us.aspx" style=" text-decoration:none">CONTACT US</a><br /><br />
+                <b><p>We Accept only ONLINE PAYMENTS!!</p></b>
+           </td>
+        </tr>
+        <b><p style=" position:absolute; top:370px; left:300px; width:900px">
+            © Health Care System. All Rights Reserved (Terms of Use)Developed and Managed by SRR TEAM
+        </p></b>
+        </table>
+    </div>
+     <div style="width:100%; height:7px; background-color:#2B65EC; position:absolute; top:1210px"></div>
+    </form>
+</body>
+</html>
+ 

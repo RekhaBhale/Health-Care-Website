@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Data;
+using System.Data.SqlClient;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace validation
+{
+    public partial class Registration : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            CompareValidator2.ValueToCompare = DateTime.Now.ToShortDateString();
+
+        }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            Calendar1.Visible = true;
+        }
+
+        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        {
+            txtDob.Text = Calendar1.SelectedDate.ToShortDateString();
+            Calendar1.Visible = false;
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            
+           
+        }
+    }
+}
+
+   //<table style=" position:absolute">
+   //         <tr class="row1">
+   //             <td><img src="Images/Slide1.JPG" alt="LOGO" style="height:140px; width:300px; top:8px; left:150px; position:absolute"/></td> 
+   //             <td></td>
+   //             <td><a id="a6" href="#" style="position:absolute; left:900px; top:30px; font-size:25px; text-decoration:none"><b>Emergency Numbers</b></a></td>
+   //         </tr>
+   //     </table>

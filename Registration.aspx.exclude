@@ -1,0 +1,239 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="validation.Registration" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+
+    
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+
+    }
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <asp:Label ID="Label14" runat="server" BorderStyle="Solid" Font-Bold="True" 
+            Font-Size="X-Large" 
+            style="z-index: 1; left: 425px; top: 15px; position: absolute; height: 29px; width: 272px" 
+            Text="REGISTRATION FORM"></asp:Label>
+    
+    </div>
+    <p>
+        <asp:CompareValidator ID="CompareValidator1" runat="server" 
+            ControlToCompare="txtPass" ControlToValidate="txtCpass" 
+            ErrorMessage="password not match" ForeColor="Red" SetFocusOnError="True" 
+            style="z-index: 1; left: 692px; top: 194px; position: absolute"></asp:CompareValidator>
+    </p>
+    <asp:Label ID="Label1" runat="server" 
+        style="z-index: 1; left: 406px; top: 108px; position: absolute" 
+        Text="USER NAME :"></asp:Label>
+    <p>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+            ControlToValidate="txtUname" ErrorMessage="Enter user name" ForeColor="#FF3300" 
+            SetFocusOnError="True" 
+            style="z-index: 1; left: 692px; top: 107px; position: absolute"></asp:RequiredFieldValidator>
+    </p>
+    <p>
+        <asp:Label ID="Label3" runat="server" 
+            style="z-index: 1; left: 447px; top: 74px; position: absolute" Text="NAME :"></asp:Label>
+        <asp:Label ID="Label4" runat="server" 
+            style="z-index: 1; left: 408px; top: 150px; position: absolute; height: 18px" 
+            Text="PASSWORD :"></asp:Label>
+        <asp:TextBox ID="txtName" runat="server" 
+            style="z-index: 1; top: 70px; position: absolute; left: 530px"></asp:TextBox>
+        <asp:TextBox ID="txtUname" runat="server" 
+            style="z-index: 1; left: 532px; top: 106px; position: absolute"></asp:TextBox>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+            ControlToValidate="txtEmail" ErrorMessage="Enter valit email id" 
+            ForeColor="Red" SetFocusOnError="True" 
+            style="z-index: 1; left: 697px; top: 233px; position: absolute" 
+            ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+    </p>
+    <p>
+        <asp:Label ID="Label5" runat="server" 
+            style="z-index: 1; left: 343px; top: 194px; position: absolute" 
+            Text="CONFIRM PASSWORD :"></asp:Label>
+        <asp:TextBox ID="txtPass" runat="server" 
+            style="z-index: 1; left: 528px; top: 150px; position: absolute" 
+            TextMode="Password"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+            ControlToValidate="txtName" ErrorMessage="Enter Name" ForeColor="#FF3300" 
+            SetFocusOnError="True" 
+            style="z-index: 1; left: 690px; top: 70px; position: absolute; bottom: 447px"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
+            ControlToValidate="txtPass" ErrorMessage="Enter vaild pasword" ForeColor="Red" 
+            style="z-index: 1; left: 688px; top: 152px; position: absolute"></asp:RequiredFieldValidator>
+    </p>
+    <asp:Label ID="Label6" runat="server" 
+        style="z-index: 1; left: 424px; top: 231px; position: absolute" 
+        Text="EMAIL ID. :"></asp:Label>
+    <asp:Label ID="Label8" runat="server" 
+        style="z-index: 1; left: 384px; top: 429px; position: absolute" 
+        Text="DATE OF BIRTH :"></asp:Label>
+    <p>
+        <asp:Label ID="Label7" runat="server" 
+            style="z-index: 1; left: 404px; top: 278px; position: absolute" 
+            Text="MOBILE NO. :"></asp:Label>
+        <asp:TextBox ID="txtCpass" runat="server" 
+            style="z-index: 1; left: 530px; top: 190px; position: absolute" 
+            TextMode="Password"></asp:TextBox>
+    </p>
+    <asp:Label ID="Label9" runat="server" 
+        style="z-index: 1; left: 430px; top: 385px; position: absolute" 
+        Text="HOBBIES :"></asp:Label>
+    <asp:Label ID="Label10" runat="server" 
+        style="z-index: 1; left: 459px; top: 318px; position: absolute" Text="CITY :"></asp:Label>
+    <asp:Label ID="Label11" runat="server" 
+        style="z-index: 1; left: 436px; top: 352px; position: absolute" 
+        Text="PIN NO. :"></asp:Label>
+    <asp:Label ID="Label12" runat="server" 
+        style="z-index: 1; left: 338px; top: 472px; position: absolute" 
+        Text="SECURITY QUESTION :"></asp:Label>
+    <asp:Label ID="Label13" runat="server" 
+        style="z-index: 1; left: 429px; top: 513px; position: absolute" Text="ANSWER :"></asp:Label>
+    <asp:TextBox ID="txtMoNo" runat="server" 
+        style="z-index: 1; left: 528px; top: 276px; position: absolute" 
+        TextMode="Number"></asp:TextBox>
+    <asp:TextBox ID="txtEmail" runat="server" 
+        style="z-index: 1; left: 529px; top: 230px; position: absolute"></asp:TextBox>
+    <asp:TextBox ID="txtpin" runat="server" 
+        style="z-index: 1; left: 528px; top: 352px; position: absolute" 
+        TextMode="Number"></asp:TextBox>
+    <asp:TextBox ID="txtDob" runat="server"  
+        style="z-index: 1; left: 528px; top: 429px; position: absolute"></asp:TextBox>
+    <asp:DropDownList ID="cityDropDownList" runat="server" 
+        style="z-index: 1; top: 318px; position: absolute; left: 532px">
+        <asp:ListItem>select value</asp:ListItem>
+        <asp:ListItem>umarkhed</asp:ListItem>
+        <asp:ListItem>vasai</asp:ListItem>
+        <asp:ListItem>andheri</asp:ListItem>
+        <asp:ListItem>boriwali</asp:ListItem>
+    </asp:DropDownList>
+    <asp:TextBox ID="txtsecuans" runat="server" 
+        style="z-index: 1; left: 530px; top: 513px; position: absolute"></asp:TextBox>
+    <asp:DropDownList ID="secuDropDownList" runat="server" 
+        style="z-index: 1; left: 530px; top: 473px; position: absolute">
+        <asp:ListItem>select question</asp:ListItem>
+        <asp:ListItem>what is your pet name?</asp:ListItem>
+        <asp:ListItem>what is your first school name</asp:ListItem>
+        <asp:ListItem>what is your nick name?</asp:ListItem>
+    </asp:DropDownList>
+    <asp:ListBox ID="hobbieslist" runat="server" 
+        style="z-index: 1; left: 531px; top: 387px; position: absolute; width: 136px; height: 21px">
+        <asp:ListItem>select value</asp:ListItem>
+        <asp:ListItem>reading</asp:ListItem>
+        <asp:ListItem>writing</asp:ListItem>
+        <asp:ListItem>singing</asp:ListItem>
+        <asp:ListItem>dancing</asp:ListItem>
+        <asp:ListItem>puja</asp:ListItem>
+    </asp:ListBox>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
+        ControlToValidate="txtMoNo" ErrorMessage="Enter mobile number" ForeColor="Red" 
+        style="z-index: 1; left: 690px; top: 273px; position: absolute"></asp:RequiredFieldValidator>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" 
+        ControlToValidate="txtsecuans" ErrorMessage="Enter answer" ForeColor="Red" 
+        style="z-index: 1; left: 685px; top: 515px; position: absolute; height: 19px; width: 79px;" 
+        SetFocusOnError="True"></asp:RequiredFieldValidator>
+    <asp:Calendar ID="Calendar1" runat="server" 
+        style="z-index: 1; left: 712px; top: 424px; position: absolute; height: 88px; width: 113px" 
+        Visible="False" onselectionchanged="Calendar1_SelectionChanged"></asp:Calendar>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" 
+        ControlToValidate="cityDropDownList" ErrorMessage="select city" ForeColor="Red" 
+        InitialValue="0" 
+        style="z-index: 1; left: 692px; top: 319px; position: absolute; bottom: 198px"></asp:RequiredFieldValidator>
+    <p>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
+            ControlToValidate="txtpin" ErrorMessage="Enter pin no." ForeColor="Red" 
+            
+            style="z-index: 1; left: 689px; top: 356px; position: absolute; bottom: 248px;"></asp:RequiredFieldValidator>
+    </p>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" 
+        ControlToValidate="hobbieslist" ErrorMessage="select hobbies" ForeColor="Red" 
+        InitialValue="0" 
+        style="z-index: 1; left: 690px; top: 395px; position: absolute"></asp:RequiredFieldValidator>
+    <p>
+        &nbsp;</p>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" 
+        ControlToValidate="secuDropDownList" ErrorMessage="select secutity question" 
+        ForeColor="Red" 
+        style="z-index: 1; left: 750px; top: 469px; position: absolute" 
+        SetFocusOnError="True"></asp:RequiredFieldValidator>
+    <p>
+        <asp:CompareValidator ID="CompareValidator2" runat="server" Display="Dynamic" 
+            ErrorMessage="Incorrect Dob" ForeColor="Red" SetFocusOnError="True" 
+            style="z-index: 1; left: 921px; top: 429px; position: absolute" 
+            ControlToValidate="txtDob" Operator="LessThan"></asp:CompareValidator>
+    </p>
+    <p>
+    <asp:Button ID="Button1" runat="server" Font-Bold="True" Font-Size="Large" 
+        ForeColor="#000066" 
+        style="z-index: 1; left: 427px; top: 739px; position: absolute" 
+        Text="Submit" onclick="Button1_Click" />
+    </p>
+    <p>
+        <asp:Label ID="Label15" runat="server" 
+            style="z-index: 1; left: 378px; top: 575px; position: absolute" Text="Gender"></asp:Label>
+    </p>
+    <asp:RadioButtonList ID="RadioButtonList1" runat="server" 
+        style="z-index: 1; left: 459px; top: 562px; position: absolute; height: 27px; width: 144px">
+        <asp:ListItem>Male</asp:ListItem>
+        <asp:ListItem>Female</asp:ListItem>
+    </asp:RadioButtonList>
+    <asp:Button ID="Button2" runat="server" Font-Bold="True" Font-Size="Large" 
+        ForeColor="#000066" 
+        style="z-index: 1; left: 564px; top: 738px; position: absolute; right: 362px" 
+        Text="Reset" onclick="Button2_Click" />
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <asp:ListBox ID="ListBox1" runat="server" 
+        style="z-index: 1; left: 579px; top: 622px; position: absolute">
+        <asp:ListItem>C</asp:ListItem>
+        <asp:ListItem>C++</asp:ListItem>
+        <asp:ListItem>Java</asp:ListItem>
+        <asp:ListItem>C#</asp:ListItem>
+    </asp:ListBox>
+    <p>
+        <asp:ImageButton ID="ImageButton1" runat="server" onclick="ImageButton1_Click" 
+            
+            style="z-index: 1; left: 670px; top: 425px; position: absolute; height: 28px; width: 28px;" 
+            ImageUrl="~/Images/aTqeo6dLc.gif" />
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <asp:Label ID="Label16" runat="server" 
+            style="z-index: 1; left: 370px; top: 627px; position: absolute" 
+            Text="Programming Languages known"></asp:Label>
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    </form>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+</body>
+</html>
